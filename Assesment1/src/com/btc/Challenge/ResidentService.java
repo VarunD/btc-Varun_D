@@ -24,6 +24,9 @@ ResidentService()
 	residentsRepository.add(r6);
 }
 
+
+	
+
 public boolean addResident(Resident resident) throws DuplicateFormatFlagsException {
 
     return false;
