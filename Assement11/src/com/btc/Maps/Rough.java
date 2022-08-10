@@ -45,31 +45,45 @@ public class Rough
 			m.put(35, 90);
 			m.put(33, 90);
 			m.put(56, 88);
+			m.put(56,67);
 			
 			List<Rough>  a = new ArrayList<>();
 			Rough r3 = new Rough(89, "varun");
 			Rough r4 = new Rough(96, "pramod");
 			
-			a.add(r3);
-			a.add(r4);
-			
-			for(Rough i: a)
-			{
-				System.out.println(i.getMarks());
-			}
-			
-			
-			
+//			a.add(r3);
+	//		a.add(r4);
+//			
+//			for(Rough i: a)
+//			{
+//				System.out.println(i.getMarks());
+//			}
+//			
 			for(Integer i : m.keySet())
 			{
-//				System.out.println( i + " "+ m.get(i));
-				System.out.println(i +" "+  m.get(i));
+				System.out.println(i+" "+m.get(i));
 			}
-//			the above code will print the key along with the values
-			for(Integer j : m.keySet())
+			
+			Map<Integer, Rough>  a1 = new HashMap<>();
+			Rough r5 = new Rough(89, "varun");
+			Rough r6 = new Rough(96, "pramod");
+			a1.put(1, r5);
+			a1.put(2, r6);
+			for(Integer i : a1.keySet())
 			{
-				System.out.print(j+" "+m.get(j));
+				System.out.println(i+"==>"+a1.get(i).getName());
 			}
+			
+//			for(Integer i : m.keySet())
+//			{
+//				System.out.println( i + " "+ m.get(i));
+				//System.out.println(i +" "+  m.get(i));
+		//	}
+//			the above code will print the key along with the values
+//			for(Integer j : m.keySet())
+//			{
+//				System.out.print(j+" "+m.get(j));
+//			}
 			
 			
 			System.out.println("==============");
